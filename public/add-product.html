@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="add-product.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato:wght@100&display=swap" rel="stylesheet">
+
+    <title>Add your product here</title>
+</head>
+<body>
+        <img src="../images/loading.gif" alt="loading" class="loader">
+        <h1 class="title">Add your product here</h1>
+
+        <div class="error">this is an error</div>
+
+        <!-- product detail -->
+        <section class="product-section">
+            
+              <!-- Upload image  -->
+            <div class="image-upload-container">
+                <input type="file" id="upload-image" accept="image/png, image/jpeg, image/jpg" hidden>
+                <label for="upload-image" class="upload-overlay">upload image</label>
+                <img class="product-img">
+            </div>
+
+            <div class="product-detail">
+                <h1 class="product-title" contenteditable="true" data-placeholder="product name"></h1>
+                <p class="product-des" contenteditable="true" data-placeholder="short product description"></p>
+                <div class="ratings disable">
+                    <img src="images/fill star.jpeg" class="star" alt="">
+                    <img src="images/fill star.jpeg" class="star" alt="">
+                    <img src="images/fill star.jpeg" class="star" alt="">
+                    <img src="images/fill star.jpeg" class="star" alt="">
+                    <img src="images/no fill star.jpeg" class="star" alt="">
+                    <span class="rating-count">4,830 Reviews</span>
+                </div>
+                <p class="price" contenteditable="true" data-placeholder="price without $"></p>
+                <div class="btn-container disable">
+                    <button class="product-btn buy-btn">BUY NOW</button>
+                    <button class="product-btn cart-btn">ADD TO CART</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-des">
+            <h1 class="section-title">DETAILS</h1>
+            <p class="des" contenteditable="true" data-placeholder="Details, you can add images using html img tag"></p>
+        </section>
+
+        <section class="tag-section">
+            <h1 class="section-title">Tags</h1>
+            <p class="text">enter some tags related to product this will help in searching the product. Give comma to separate tags.</p>
+            <p class="des" contenteditable="true" data-placeholder="Write atleast 3 tags"></p>
+        </section>
+
+        <div class="btn-wrapper">
+            <button class="product-btn add-product-btn">add product</button>
+            <button class="product-btn draft-btn">save draft</button>
+        </div>
+ 
+
+        <!-- footer -->
+        <footer>Made By Lakshit Tyagi</footer>
+
+    <script src="add-product.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    z-index: 5;
+    display: none;
+}
+
+.form-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.form-container {
+    width: 60%;
+    min-width: 300px;
+    height: 80vh;
+    background: white;
+    z-index: 2;
+    display: flex;
+    box-shadow: 0 0 10px black;
+}
+
+.form-img {
+    width: 40%;
+    overflow: hidden;
+}
+
+.form {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.form-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 40px;
+    /* font-family: 'lato', sans-serif; */
+    color: black;
+    outline: none;
+    border-radius: 5px;
+} 
+
+::placeholder {
+    color: grey;
+    text-transform: capitalize;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid rgb(84, 84, 84);
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: rgb(41, 40, 40);
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    display: block;
+    margin: 5px 0;
+    text-transform: capitalize;
+    /* font-family: 'lato', sans-serif; */
+    user-select: none;
+    opacity: 0;
+}
+
+.error.show {
+    opacity: 1;
+}
+
+#tc {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#tc:checked {
+    background: grey;
+}
+
+#tc::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/check.png);
+    background-size: contain;
+    display: none;
+}
+
+#tc:checked::before {
+    display: block;
+}
+
+label {
+    margin-left: 5px;   
+    font-size: 0.8rem;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+label a {
+    text-decoration: none;
+}
+
+.submit-btn, .apply-btn {
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    padding: 0.8rem 0;
+    border-radius: 5px;
+    background: grey;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'cinzel';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-form-link {
+    font-family: 'cinzel';
+    text-decoration: none;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,146 @@
+body {
+    padding: 100px 0;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    z-index: 5;
+    display: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: -30px;
+    font-weight: 100;
+    line-height: 3rem;
+}
+
+.error {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    min-height: 100px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    z-index: 9;
+    text-align: center;
+    color: red;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid rgb(160, 158, 158);
+}
+
+.product-image {
+    background: white;
+}
+
+.image-upload-container {
+    width: 60%;
+    position: relative;
+    height: 600px;
+}
+
+.upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    /* opacity: 0; */
+    transition: 0.5s;
+}
+
+/* .upload-overlay:hover {
+    opacity: 1;
+} */
+
+.product-details {
+    width: 60%;
+    max-width: 60%;
+}
+
+.disable {
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
+.product-btn {
+    background: grey;
+}
+
+*[contenteditable="true"] {
+    outline: none; 
+    border: 2px solid rgb(197, 196, 196);
+    padding: 10px;
+}
+
+*[contenteditable="true"]:focus {
+    border-color: rgb(1, 26, 25);
+}
+
+.des {
+    height: 300px;
+    overflow: scroll;
+    white-space: pre-wrap;
+}
+
+.tag-section {
+    padding: 30px 5vw;
+}
+
+.text {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    /* opacity: 0.5; */
+}
+
+.tags {
+    height: 300px;
+    margin: 20px 0;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 10px 0;
+}
+
+.add-product-btn {
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    color: white;
+    background: #d5be8b;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.draft-btn {
+    background: grey;
+    border: none;
+    outline: none;
+}

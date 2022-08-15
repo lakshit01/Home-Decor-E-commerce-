@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+
+}
+
+.seller-img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-family: 'cinzel';
+}
+
+input, textarea {
+    width: 70%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 2.2rem;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+textarea{
+    height: 8rem;
+    resize: none;
+    font-family: sans-serif;
+    outline: none;
+}

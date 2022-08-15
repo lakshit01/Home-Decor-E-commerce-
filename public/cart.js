@@ -1,0 +1,1 @@
+let addToCartBtn = document.querySelector('.cart-btn');
